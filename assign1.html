@@ -1,58 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                    
         <style>
-            table ,tr{
-                width: 100%;
-                border-spacing: 10px 5px;
+           .row .col{
+                border-style: groove;
             }
-        
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding:10px;
+        .row2{
             
+            margin-left:5px;
+            text-align:center;
+
+        }
+        .row3{
+            text-align:center;
+
+            margin-top:5px;
         }
         
-        tr:nth-child(even) {
-            
-            background-color: #dddddd;
+        
+        .row4{
+            text-align:center;
+
+            margin-top:10px;
         }
         
-        .noSpace{
-            border-collapse: collapse;
-            border-spacing: 0px 0px;
-            
-            
-            
-        }
-        </style>
+            </style>
     </head>
     <body>
         
-        <h1>HTML Table</h1>
-        <h2>Example using table tag</h2>
-        <p> Assignment by bharat </p>
-        
-        
-        <table>
-            <tr>
-                <th>Col 1</th>
-                <th>Col 2</th>
-                <th>Col </th>
-            </tr>
-            <tr>
-                <td colspan=3> Row 2</td>
+        <div class="container-fluid">
+            <div class="container borderClass">
+                <div class="row">
+
+                <div class="col"><h1>Bootstrap</h1></div>
+               
+            </div>
+            <div class="row">
+                <div class="col">  <h2>For Angular</h2></div>
                 
-            </tr>
+            </div>
             
-            <tr class="noSpace">
-                <td>Col 1</td>
-                <td>Col 2</td>
-                <td>Col 3</td>
-            </tr>
             
-        </table>
+            <div class="row">
+                <div class="col">  <p>Assignment by bharat </p></div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col ">Col 1</div>
+                <div class="col row2">Col 2</div>
+                <div class="col row2">Col 3</div>
+
+            </div>
+            
+            <div class="row row3">
+                <div class="col">Assignment 3</div>
+               
+                
+            </div>
+            
+            <div class="row row4">
+                <div class="col">Col 1</div>
+                <div class="col">Col 2</div>
+                
+            </div>
+            </div>
+        </div>
         
     </body>
 </html>
